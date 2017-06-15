@@ -1,0 +1,75 @@
+@import "../../../styles";
+
+.header-container{
+    font-family: $primary-font;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0 0 0;
+    min-width: 250px;
+}
+
+.header-span-container{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-span-1{
+    color: $primary-color-gold;
+}
+
+/* MEDIA QUERIES */
+/*MEDIA QUERIES - 425PX*/
+@media only screen and (min-width: 375px) and (max-width: 469px) {
+    .header-span-container{
+        font-size: 24px;
+    }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 529px) {
+    .header-span-container{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 530px) and (max-width: 629px) {
+    .header-span-container{
+        font-size: 32px;
+    }
+}
+
+@media only screen and (min-width: 630px) and (max-width: 699px) {
+    .header-span-container{
+        font-size: 36px;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 767px) {
+    .header-span-container{
+        font-size: 38px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 829px) {
+    .header-span-container{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 830px) and (max-width: 929px) {
+    .header-span-container{
+        font-size: 42px;
+    }
+}
+
+@media only screen and (min-width: 930px) and (max-width: 1023px) {
+    .header-span-container{
+        font-size: 44px;
+    }
+}
+
+@media (min-width: 1024px){
+    .header-span-container{
+        font-size: 46px;
+    }
+}
+

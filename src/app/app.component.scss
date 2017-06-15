@@ -1,0 +1,15 @@
+.container-fluid{
+    /* CONTENT - CENTER */
+    display: flex;
+    min-height: 100vh;  
+    flex-direction: column;
+}
+
+.content{
+    flex: 1;
+      
+    /* LOGIN CONTAINER - CENTER */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

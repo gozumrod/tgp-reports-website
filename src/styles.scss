@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "compass/css3";
+$primary-font: Century Gothic, Arial, Helvetica, sans-serif;
+$primary-color-gold: #de9700;
+$primary-color-orange: #dd6a03;
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    // -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transition-property($property...) {
+    -moz-transition-property:    $property;
+    // -o-transition-property:      $property;
+    -webkit-transition-property: $property;
+    transition-property:         $property;
+}
+@mixin transition-duration($duration...) {
+    -moz-transition-property:    $duration;
+    // -o-transition-property:      $duration;
+    -webkit-transition-property: $duration;
+    transition-property:         $duration;
+}
+@mixin transition-timing-function($timing...) {
+    -moz-transition-timing-function:    $timing;
+    // -o-transition-timing-function:      $timing;
+    -webkit-transition-timing-function: $timing;
+    transition-timing-function:         $timing;
+}
+@mixin transition-delay($delay...) {
+    -moz-transition-delay:    $delay;
+    // -o-transition-delay:      $delay;
+    -webkit-transition-delay: $delay;
+    transition-delay:         $delay;
+}
+
+.no-padding {
+  [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+body{
+    background-color: #f2f2f2;
+    min-width: 250px;
+}
+/* OUTLINES */
+.b-red{
+    border: 1px solid red;
+}
+
+.b-blue{
+    border: 1px solid blue;
+}
+
+.b-green{
+    border: 1px solid green;
+}
+
+.b-yellow{
+    border: 1px solid yellow;
+}
+
+.b-black{
+    border: 1px solid black;
+}

@@ -1,0 +1,226 @@
+@import "../../../styles";
+
+/* USERNAME & PASSWORD STYLE */
+
+/* USERNAME & PASSWORD LABELS STYLE */
+@mixin labels-style($line-height){
+    width: 100%;
+    line-height: $line-height;
+    color: $primary-color-gold;
+    text-align: left;
+}
+
+/* USERNAME & PASSWORD INPUTS STYLE */
+@mixin inputs-style($border-line-size){
+    border-top: 0;
+    border-right: 0;
+    border-bottom: $border-line-size solid #646464;
+    border-left: 0;
+
+    background-color: transparent;
+    width: 100%;
+    
+    &:focus{
+        outline: none;
+        background: transparent;
+        box-shadow: 0 10px 20px -7px darkgray;
+    }
+
+    @include transition (all 0.30s ease-in-out);
+}
+.login-container{
+    font-family: $primary-font;
+    text-align: center;
+    margin: 50px 0;
+    font-size: 12px;
+
+    .login-wrapper{
+        // width: 200px;
+        border: 3px solid #e0e0e0;
+
+        padding: 10px 0 20px 0;
+        
+        display: inline-block;
+        vertical-align: middle;   
+    }
+}
+
+.username-container{
+    margin: 0 0 5px 0;
+    padding: 0 30px;
+
+    .username-label-container{
+        @include labels-style($line-height:12px);
+    }
+
+    input{
+        @include inputs-style($border-line-size:2px);
+    }
+
+}
+
+.password-container{
+    margin: 0 0 5px 0;
+    padding: 0 30px;
+
+    .password-label-container{
+        @include labels-style($line-height:12px);
+    }
+
+    input{
+        @include inputs-style($border-line-size:2px);
+    }
+}
+
+.submit-container{
+    text-align: center;
+    margin: 15px 0 0 0;
+    padding: 0 30px;
+
+    button{
+        width: 100%;
+        border: 3px solid $primary-color-orange;
+        background-color: transparent;
+        
+            @include transition (all 1s ease-in-out);
+
+        &:hover{
+            background-color: $primary-color-orange;
+            /*text-shadow: 1px 1px 5px black;*/
+            box-shadow: 1px 1px 20px 2px $primary-color-orange;  
+
+            span{
+                color: #f2f2f2;
+            }
+        }
+        
+        &:focus{
+            outline: none;
+            
+            background-color: $primary-color-orange;
+            box-shadow: 1px 1px 30px 10px #ac5304;  
+            
+            span{
+                color:#ac5304;
+                @include transition (all 0.30s ease-in-out);
+            }
+        }
+
+        span{
+            color: $primary-color-orange;
+            font-weight: bold;
+            @include transition (all 1s ease-in-out);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 470px){
+    .login-container{
+            font-size: 14px;
+        .login-wrapper{
+            padding: 15px 0 25px 0;
+            width: 250px;
+        }
+    }
+
+    .username-container{
+        margin: 0 0 10px 0;
+        padding: 0 40px;
+        .username-label-container{
+            @include labels-style($line-height:14px);
+        }
+
+        input{
+            @include inputs-style($border-line-size:2px);
+        }
+    }
+
+    .password-container{
+        margin: 0 0 10px 0;
+        padding: 0 40px;
+        .password-label-container{
+            @include labels-style($line-height:14px);
+        }
+
+        input{
+            @include inputs-style($border-line-size:2px);
+        }
+    }
+
+    .submit-container{
+        margin: 20px 0 0 0;
+        padding: 0 40px;
+    }
+
+}
+
+@media (min-width: 630px){
+    .login-container{
+            font-size: 15px;
+        .login-wrapper{
+            padding: 20px 0 30px 0;
+            width: 300px;
+        }
+    }
+
+    .username-container{
+        margin: 0 0 15px 0;
+        padding: 0 50px;
+    }
+
+    .password-container{
+        margin: 0 0 15px 0;
+        padding: 0 50px;
+    }
+    
+    .submit-container{
+        margin: 30px 0 0 0;
+        padding: 0 50px;
+    }
+
+}
+
+@media (min-width: 768px){
+    .login-container{
+        font-size: 16px;
+        .login-wrapper{
+            padding: 30px 0 40px 0;
+            width: 350px;
+        }
+    }
+
+        .username-container{
+        margin: 0 0 20px 0;
+        padding: 0 55px;
+    }
+
+    .password-container{
+        margin: 0 0 20px 0;
+        padding: 0 55px;
+    }
+    
+    .submit-container{
+        margin: 35px 0 0 0;
+        padding: 0 55px;
+    }
+
+}
+
+@media (min-width: 1024px){
+
+     .submit-container{
+        margin: 40px 0 0 0;
+    }
+}

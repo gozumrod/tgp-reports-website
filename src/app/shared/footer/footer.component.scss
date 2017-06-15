@@ -1,0 +1,49 @@
+.footer-container{
+    background-color: black;
+    height: 50px;
+
+    .img-footer-logo{
+        width: 100px;
+        height: 100%;
+    }
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 470px){
+    .footer-container{
+
+        .img-footer-logo{
+            width: 110px;
+        }
+    }   
+}
+
+@media (min-width: 630px){
+    .footer-container{
+        height: 60px;
+
+        .img-footer-logo{
+            width: 130px;
+        }
+    }   
+}
+
+@media (min-width: 768px){
+    .footer-container{
+        height: 70px;
+
+        .img-footer-logo{
+            width: 140px;
+        }
+    }   
+}
+
+
+@media (min-width: 1024px){
+    .footer-container{
+
+        .img-footer-logo{
+            width: 150px;
+        }
+    }
+}
