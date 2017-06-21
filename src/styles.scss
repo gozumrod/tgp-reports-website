@@ -3,6 +3,7 @@
 $primary-font: Century Gothic, Arial, Helvetica, sans-serif;
 $primary-color-gold: #de9700;
 $primary-color-orange: #dd6a03;
+$primary-color-lgray: #e0e0e0;
 
 @mixin transition($transition...) {
     -moz-transition:    $transition;
