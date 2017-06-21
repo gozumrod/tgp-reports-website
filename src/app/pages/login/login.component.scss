@@ -1,7 +1,11 @@
 @import "../../../styles";
 
-/* USERNAME & PASSWORD STYLE */
+/* LOGIN CONTAINER STYLES*/
+@mixin login-border-style($border-line-size){
+    border: $border-line-size solid #e0e0e0;
+}
 
+/* USERNAME & PASSWORD STYLES */
 /* USERNAME & PASSWORD LABELS STYLE */
 @mixin labels-style($line-height){
     width: 100%;
@@ -36,7 +40,7 @@
 
     .login-wrapper{
         // width: 200px;
-        border: 3px solid #e0e0e0;
+        @include login-border-style($border-line-size: 2px);
 
         padding: 10px 0 20px 0;
         
@@ -170,6 +174,7 @@
     .login-container{
             font-size: 15px;
         .login-wrapper{
+            @include login-border-style($border-line-size: 3px);
             padding: 20px 0 30px 0;
             width: 300px;
         }
@@ -219,6 +224,11 @@
 }
 
 @media (min-width: 1024px){
+    .login-container{
+        .login-wrapper{
+            @include login-border-style($border-line-size: 4px);
+        }
+    }
 
      .submit-container{
         margin: 40px 0 0 0;
