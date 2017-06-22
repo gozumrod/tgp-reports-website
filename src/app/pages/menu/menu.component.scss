@@ -1,0 +1,77 @@
+@import "../../../styles";
+
+.menu-container{
+    width: 180px;
+    font-size: 13px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    color: $primary-color-gray-2;
+
+    .menu-tab{
+        margin: 5px 0;
+        @include border-style-3($border-line-width: 2px);
+        @include transition (all 1s ease-in-out);
+
+        &:hover{
+            border-color: $primary-color-orange-1;
+            @include hover-effect-1;
+        }
+
+        span{
+            @include transition (all 1s ease-in-out);
+        }
+    }
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERY: 470PX */
+@media (min-width: 470px){
+    .menu-container{
+        width: 250px;
+        font-size: 14px;
+        
+        .menu-tab{
+            margin: 8px 0;
+            padding: 1px 0;
+        }
+    }
+}
+
+/* MEDIA QUERY: 630PX */
+@media (min-width: 630px){
+    .menu-container{
+        width: 330px;
+        font-size: 14px;
+
+        .menu-tab{
+            margin: 10px 0;
+            padding: 2px 0;
+        }
+    }
+}
+
+/* MEDIA QUERY: 768PX */
+@media (min-width: 768px){
+    .menu-container{
+        width: 360px;
+        font-size: 15px;
+
+        .menu-tab{
+            padding: 4px 0;
+        }
+    }
+}
+
+/* MEDIA QUERY: 1024PX */
+@media (min-width: 1024px){
+    .menu-container{
+        width: 400px;
+    }
+}
