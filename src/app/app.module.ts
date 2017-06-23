@@ -9,6 +9,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { LoginComponent } from './pages/login/login.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { routing } from './app.routing';
+import { MenuProcedureComponent } from './pages/menu/menu-procedure/menu-procedure.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { routing } from './app.routing';
     HeaderComponent,
     FooterComponent,
     LoginComponent,
-    MenuComponent
+    MenuComponent,
+    MenuProcedureComponent
   ],
   imports: [
     BrowserModule,

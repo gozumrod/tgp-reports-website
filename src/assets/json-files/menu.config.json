@@ -1,0 +1,15 @@
+[
+    {
+        "cp-step": "cp1000",
+
+        "step-title": "Step 1 Title",
+        "step-description": "This is the step 1 description."
+    },
+
+    {
+        "cp-step": "cp2000",
+        
+        "step-title": "Step 2 Title",
+        "step-description": "This is the step 2 description."
+    }
+]
