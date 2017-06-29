@@ -1,15 +1,42 @@
 [
     {
-        "cp-step": "cp1000",
+        "cpCategory": "cp1000",
+        
+        "cp1kTabs":
+        {
+            "cp1kSP1":
+            [{ 
+                "cp1kSP1Tab":"cp1000SP1",
+                "cp1kSP1StepTitle": "SP1 Step 1 Title",
+                "cp1kSP1StepDesc": "SP1 This is the step 1 description."
+            }],
 
-        "step-title": "Step 1 Title",
-        "step-description": "This is the step 1 description."
+            "cp1kSP2":
+            [{ 
+                "cp1kSP2Tab":"cp1000SP2",
+                "cp1kSP2StepTitle": "SP2 Step 1 Title",
+                "cp1kSP2StepDesc": "SP2 This is the step 1 description."
+            }]
+        
+        }
     },
+    
 
     {
-        "cp-step": "cp2000",
+        "cpCategory": "cp2000",
+
+        "cp2000SP1": "cp2000 sub tab 1",
+        "cp2000SP2": "cp2000 sub tab 2",
+        "cp2000SP3": "cp2000 sub tab 3",
         
-        "step-title": "Step 2 Title",
-        "step-description": "This is the step 2 description."
+        "cp2ksp1StepTitle": "SP1 Step 1 Title",
+        "cp2ksp1StepDescription": "SP1 This is the step 1 description.",
+
+        "cp2ksp2StepTitle": "SP2 Step 1 Title",
+        "cp2ksp2StepDescription": "SP2 This is the step 1 description.",
+
+        "cp2ksp3StepTitle": "SP3 Step 1 Title",
+        "cp2ksp3StepDescription": "SP3 This is the step 1 description."
+
     }
 ]

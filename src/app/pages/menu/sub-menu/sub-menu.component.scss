@@ -1,0 +1,27 @@
+@import "../../../../styles";
+
+.sub-menu-container{
+    width: 180px;
+    font-size: 13px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    color: $primary-color-gray-2;
+
+    .menu-tab{
+        margin: 5px 0;
+        @include border-style-3($border-line-width: 2px);
+        @include transition (all 1s ease-in-out);
+
+        &:hover{
+            border-color: $primary-color-orange-1;
+            @include hover-effect-1;
+        }
+
+        span{
+            @include transition (all 1s ease-in-out);
+        }
+    }
+}

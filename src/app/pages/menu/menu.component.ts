@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuService } from '../../shared/_service/menu.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,13 +9,17 @@ import { Router } from '@angular/router';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private menuService: MenuService) { 
+    
+  }
 
   ngOnInit() {
   }
   
-  onNavigateMenuLandingPage(){
-      this.router.navigate(['/menu-procedure']);
+  onNavigateSubMenuPage(val){
+      sessionStorage.setItem("cpTab", val);
+      // this.menuService.cpTab = val;
+      this.router.navigate(['/sub-menu']);
   }
   
 }
