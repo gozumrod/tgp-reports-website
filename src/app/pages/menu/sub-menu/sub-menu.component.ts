@@ -18,7 +18,8 @@ export class SubMenuComponent implements OnInit {
   public stepDescription: string;
   public menuTab;
   public menuResult;
-  public cpTabs;
+
+  public cpTabs = [];
 
 
  
@@ -31,7 +32,31 @@ export class SubMenuComponent implements OnInit {
       .map(response => response.json())
       .subscribe(response=>{
                 let result = response;
-                this.menuResult = result[this.menuTab - 1]
+
+                if(result){
+                  this.menuResult = result[this.menuTab - 1]
+
+                  console.log(this.menuResult.cp1kTabs);
+                  console.log(this.menuResult.cp1kTabs.length); // undefined
+                  
+                  var x = 0;
+                  for(var y in this.menuResult.cp1kTabs){
+
+                    console.log(this.menuResult.cp1kTabs[y]);
+                    this.cpTabs[x] = [];
+
+                    for(var z in this.menuResult.cp1kTabs[y]){
+                      console.log(this.menuResult.cp1kTabs[y][z]);
+                      this.cpTabs[x].push(this.menuResult.cp1kTabs[y][z]);
+                    }
+                    console.log(this.cpTabs[x]);
+
+                    x++;
+                  }
+                  console.log(this.cpTabs);
+                }
+
+
                 // // console.log(this.menuResult);
                 // console.log(this.menuResult);
                 // this.cpTabs = this.menuResult.cp1kTabs;
@@ -49,10 +74,10 @@ export class SubMenuComponent implements OnInit {
                   // console.log(key); //key
                   // });
 
-                var cp1ktabs = this.menuResult.cp1kTabs;
-                console.log(cp1ktabs);
-                console.log(cp1ktabs[0]);
-                console.log(cp1ktabs.cp1kSP1);
+                // var cp1ktabs = this.menuResult.cp1kTabs;
+                // console.log(cp1ktabs);
+                // console.log(cp1ktabs[0]);
+                // console.log(cp1ktabs.cp1kSP1);
 
       })
 

@@ -5,18 +5,18 @@
         "cp1kTabs":
         {
             "cp1kSP1":
-            [{ 
+            { 
                 "cp1kSP1Tab":"cp1000SP1",
                 "cp1kSP1StepTitle": "SP1 Step 1 Title",
                 "cp1kSP1StepDesc": "SP1 This is the step 1 description."
-            }],
+            },
 
             "cp1kSP2":
-            [{ 
+            { 
                 "cp1kSP2Tab":"cp1000SP2",
                 "cp1kSP2StepTitle": "SP2 Step 1 Title",
                 "cp1kSP2StepDesc": "SP2 This is the step 1 description."
-            }]
+            }
         
         }
     },
