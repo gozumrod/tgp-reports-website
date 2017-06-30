@@ -53,7 +53,7 @@ export class SubMenuComponent implements OnInit {
                   console.log(this.cpTabs);
                 }
 
-                //test
+
                 // // console.log(this.menuResult);
                 // console.log(this.menuResult);
                 // this.cpTabs = this.menuResult.cp1kTabs;
