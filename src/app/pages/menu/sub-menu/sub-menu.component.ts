@@ -13,9 +13,6 @@ import 'rxjs/add/operator/map';
 })
 export class SubMenuComponent implements OnInit {
   public cpCategory: string;
-  public cpSP: string;
-  public stepTitle: string;
-  public stepDescription: string;
   public menuTab;
   public menuResult;
 
@@ -36,18 +33,18 @@ export class SubMenuComponent implements OnInit {
                 if(result){
                   this.menuResult = result[this.menuTab - 1]
 
-                  console.log(this.menuResult.cp1kTabs);
-                  console.log(this.menuResult.cp1kTabs.length); // undefined
+                  console.log(this.menuResult.cpSubTabs);
+                  console.log(this.menuResult.cpSubTabs.length); // undefined
                   
                   var x = 0;
-                  for(var y in this.menuResult.cp1kTabs){
+                  for(var y in this.menuResult.cpSubTabs){
 
-                    console.log(this.menuResult.cp1kTabs[y]);
+                    console.log(this.menuResult.cpSubTabs[y]);
                     this.cpTabs[x] = [];
 
-                    for(var z in this.menuResult.cp1kTabs[y]){
-                      console.log(this.menuResult.cp1kTabs[y][z]);
-                      this.cpTabs[x].push(this.menuResult.cp1kTabs[y][z]);
+                    for(var z in this.menuResult.cpSubTabs[y]){
+                      console.log(this.menuResult.cpSubTabs[y][z]);
+                      this.cpTabs[x].push(this.menuResult.cpSubTabs[y][z]);
                     }
                     console.log(this.cpTabs[x]);
 
